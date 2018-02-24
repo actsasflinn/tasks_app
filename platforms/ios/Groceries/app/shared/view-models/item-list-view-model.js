@@ -3,11 +3,11 @@ var fetchModule = require("fetch");
 var ObservableArray = require("data/observable-array").ObservableArray;
 
 function ItemListViewModel(items) {
-  var baseUrl = config.apiUrl + "tasks.json";
+  var baseUrl = config.apiUrl + "tasks";
   var viewModel = new ObservableArray(items);
 
   viewModel.load = function() {
-      return fetch(baseUrl, {
+      return fetch(baseUrl + ".json", {
           headers: getCommonHeaders()
       })
       .then(handleErrors)
@@ -33,7 +33,7 @@ function ItemListViewModel(items) {
   };
 
   viewModel.add = function(item) {
-      return fetch(baseUrl, {
+      return fetch(baseUrl + ".json", {
           method: "POST",
           body: JSON.stringify({
               name: item
@@ -56,7 +56,7 @@ function ItemListViewModel(items) {
   };
 
   viewModel.delete = function(index) {
-      return fetch(baseUrl + "/" + viewModel.getItem(index).id, {
+      return fetch(baseUrl + "/" + viewModel.getItem(index).id + ".json", {
           method: "DELETE",
           headers: getCommonHeaders()
       })

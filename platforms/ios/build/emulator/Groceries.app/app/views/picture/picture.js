@@ -86,14 +86,21 @@ exports.takePicture = function() {
             console.log(stream64);
             var file = fs.File.fromPath(path);
 
-            var formData = new FormData();
-            var blob = new Blob([stream64], { type: "image/png"});
+//*
+//            var formData = new FormData();
+            console.log("formData");
 
-            console.log("blob")
+//            var blob = new Blob([stream64], { type: "image/png" });
+//            var blob = [[stream64], { type: "image/png"}];
 
+//            console.log("blob");
+//            console.log("blob:" + blob);
+
+/*
             formData.append('task[name]', taskName);
-            formData.append('task[picture]', blob);
-            console.log("formdata:", formData);
+            console.log("xxx");
+            formData.append('task[picture]', fs.createReadStream(path));
+            console.log("zzz");
 
             fetch(config.apiUrl + "tasks.json", {
                 method: "POST",
@@ -103,10 +110,10 @@ exports.takePicture = function() {
             .then(function(item) {
               console.log(item)
             });
-            /*
-
+/*/
+//*
             var request = {
-                url: config.apiUrl + "tasks.json",
+                url: config.apiUrl + "tasks",
                 method: "POST",
                 headers: {
                     "Content-Type": "application/octet-stream",
@@ -114,8 +121,12 @@ exports.takePicture = function() {
                 },
                 description: "{ 'uploading': " + taskName + " }"
             };
+            var params = [
+              { name: "task[name]", value: taskName },
+              { name: "task[picture]", filename: path, mimeType: "image/png" }
+            ];
 
-            var task = session.uploadFile(path, request);
+            var task = session.multipartUpload(params, request);
             task.on("progress", logEvent);
             task.on("error", logEvent);
             task.on("complete", logEvent);
@@ -125,7 +136,7 @@ exports.takePicture = function() {
                 console.log("totalBytes: " + e.totalBytes);
                 console.log("eventName: " + e.eventName);
             }
-*/
+//*/
           });
 
           console.log(image);

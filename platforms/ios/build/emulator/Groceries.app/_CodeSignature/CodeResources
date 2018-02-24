@@ -82,7 +82,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		lfFDhHZqo5h0q+KgcvlzHrs/pcU=
+		78r0OwTkUug1tcFIE4ZrRd6F8b0=
 		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		V7TGins27nSFMSCGjt4agVaBwoc=
+		lV8d2/86DUTwRpDve6li+98VkKM=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		gm2pHFYyipcg5a0s8/JyxpfJY3I=
+		oaDa/25mopfxL/yCRwbRDZXD1tM=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		zJzL67F4ntLWkZ7KxfQAzuCy39s=
+		iQJfpoInIxqxh/OScF3QlyB7SQs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -313,6 +313,42 @@
 		y6Phyi7890B+cm1fZ2jBnt5Jwfg=
 		</data>
 		<key>app/tns_modules/nativescript-camera/references.d.ts</key>
+		<data>
+		kPUxea5gnDo3RcZpauUBwcvyeZc=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/LICENSE</key>
+		<data>
+		M1udhJYAeSlG/70B82FxAPvW4Qc=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/README.md</key>
+		<data>
+		YTYEenKxtMxjQOc/GNw833/tOcc=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/geolocation.common.js</key>
+		<data>
+		1TLT5/TkrCUu6Zer7fWcSTx/sP0=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/geolocation.js</key>
+		<data>
+		mqFQ6JzEVcz2AMQF5hMOnhhGlXc=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/index.d.ts</key>
+		<data>
+		aw9DfUn5usy3PKGZdCGfutjbsbM=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/location-monitor.d.ts</key>
+		<data>
+		CxvFIhhsQqIc9ClePlXsibfyEGc=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/location.d.ts</key>
+		<data>
+		L+Fq1sStRlglHOWWHQ5QmNUn2DA=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/package.json</key>
+		<data>
+		+9aLS6FdY1URAWCNDV0MD9syN6M=
+		</data>
+		<key>app/tns_modules/nativescript-geolocation/references.d.ts</key>
 		<data>
 		kPUxea5gnDo3RcZpauUBwcvyeZc=
 		</data>
@@ -1806,7 +1842,7 @@
 		</data>
 		<key>app/views/picture/picture.js</key>
 		<data>
-		yj/HgdVbsQxYzBiM8hJo700DpAU=
+		5Z0gCAIloHzBErDoyqnSN6Ujikk=
 		</data>
 		<key>app/views/picture/picture.xml</key>
 		<data>
@@ -2061,11 +2097,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lfFDhHZqo5h0q+KgcvlzHrs/pcU=
+			78r0OwTkUug1tcFIE4ZrRd6F8b0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9sxAbJM4XoRl0CPrfln5iqo21GKt6RGS1leOQuAHZmo=
+			feinSvxY3uuFmlm7c2KbBfdCWLQWkVCrZ1DC1hpuw/w=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
@@ -2314,11 +2350,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gm2pHFYyipcg5a0s8/JyxpfJY3I=
+			oaDa/25mopfxL/yCRwbRDZXD1tM=
 			</data>
 			<key>hash2</key>
 			<data>
-			pl7iCJW2KOR9Kvd9/tLjDvBtsvMu4tTmOp5OT+T6sMY=
+			qsFOVeHqGYh+yG7DSQV+7RRYzApj1Sg34HCKiPjTmBE=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -2336,11 +2372,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zJzL67F4ntLWkZ7KxfQAzuCy39s=
+			iQJfpoInIxqxh/OScF3QlyB7SQs=
 			</data>
 			<key>hash2</key>
 			<data>
-			CfP1jv1/sMII7+SaMHx9IGvYSC/AanFO9IF+KtJQpyE=
+			darmeHHY74pp/MQ83pZ3LfXSunAiPGLeJL38kD5VD2o=
 			</data>
 		</dict>
 		<key>app/README.md</key>
@@ -2674,6 +2710,105 @@
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-camera/references.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kPUxea5gnDo3RcZpauUBwcvyeZc=
+			</data>
+			<key>hash2</key>
+			<data>
+			9be28/L86VOQEuo/tIbFQO+XcYd8ol8YG6P7HuvEhq8=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M1udhJYAeSlG/70B82FxAPvW4Qc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ivivTwa3e3A+5TzXUqjG3Tr7qV44jxlDwROmXuRZDF4=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YTYEenKxtMxjQOc/GNw833/tOcc=
+			</data>
+			<key>hash2</key>
+			<data>
+			+1YKcTPpzZK++aV/WY/WbzInn1eaxdg9De7TsXkUnnk=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/geolocation.common.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1TLT5/TkrCUu6Zer7fWcSTx/sP0=
+			</data>
+			<key>hash2</key>
+			<data>
+			8q1P2u9EO4INPIv88VUQCzfB+22i6mKxDGqDhnkg2QY=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/geolocation.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mqFQ6JzEVcz2AMQF5hMOnhhGlXc=
+			</data>
+			<key>hash2</key>
+			<data>
+			VO9ZAQaBkZLk8+l+5qmxbXfYeU2MEIi317i+/jK4foc=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/index.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aw9DfUn5usy3PKGZdCGfutjbsbM=
+			</data>
+			<key>hash2</key>
+			<data>
+			gMmpn1cTuR/DScAKiNFK1vCfSUbu3o0w/LzlMK7HTsg=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/location-monitor.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CxvFIhhsQqIc9ClePlXsibfyEGc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ph8vVnuROXZZfvG7preVPg5V/LGSX0o9TlbClxJhXGA=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/location.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L+Fq1sStRlglHOWWHQ5QmNUn2DA=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ri5gRXmGPF1JDDPC8SYXkIIVTGUxHleZpaDUAOWp2as=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+9aLS6FdY1URAWCNDV0MD9syN6M=
+			</data>
+			<key>hash2</key>
+			<data>
+			KSozLrfQaIOtyTG9Pw4QRTWthqL4rzMIvMqT4kwX7N4=
+			</data>
+		</dict>
+		<key>app/tns_modules/nativescript-geolocation/references.d.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -6780,11 +6915,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yj/HgdVbsQxYzBiM8hJo700DpAU=
+			5Z0gCAIloHzBErDoyqnSN6Ujikk=
 			</data>
 			<key>hash2</key>
 			<data>
-			eIySju2CQz3esqgbe0aD9+iiJxgG445wZkojCpGt++Q=
+			BXl3PL7xscEWoQQ4nVxaCHqNKKhk2XxeS8OHasL/V9o=
 			</data>
 		</dict>
 		<key>app/views/picture/picture.xml</key>

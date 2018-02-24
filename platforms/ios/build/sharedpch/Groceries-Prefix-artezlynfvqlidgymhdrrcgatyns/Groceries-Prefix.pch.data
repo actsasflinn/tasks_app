@@ -6,9 +6,9 @@ Environment  LANG=en_US.US-ASCII PATH=/Applications/Xcode.app/Contents/Developer
 BuilderIdent ProcessPCH\ /Users/flinn/Projects/Groceries/platforms/ios/build/sharedpch/Groceries-Prefix-artezlynfvqlidgymhdrrcgatyns/Groceries-Prefix.pch.pch\ Groceries/Groceries-Prefix.pch\ normal\ x86_64\ objective-c\ com.apple.compilers.llvm.clang.1_0.compiler
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/SDKSettings.plist 0 1480627873 1868 33204
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/CoreServices/SystemVersion.plist 0 1480571274 414 33188
-InputFile    /Users/flinn/Projects/Groceries/platforms/ios/Groceries/Groceries-Prefix.pch 0 1518976695 236 33188
+InputFile    /Users/flinn/Projects/Groceries/platforms/ios/Groceries/Groceries-Prefix.pch 0 1519500996 236 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/SDKSettings.plist 0 1480627873 1868 33204
-InputFile    /Users/flinn/Projects/Groceries/platforms/ios/Groceries/Groceries-Prefix.pch 0 1518976695 236 33188
+InputFile    /Users/flinn/Projects/Groceries/platforms/ios/Groceries/Groceries-Prefix.pch 0 1519500996 236 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/usr/include/Availability.h 0 1477694142 16062 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/usr/include/AvailabilityInternal.h 0 1477084085 2392756 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h 0 1478488062 6943 33188

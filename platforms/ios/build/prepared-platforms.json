@@ -2,6 +2,7 @@
     "email-validator": true,
     "nativescript-background-http": true,
     "nativescript-camera": true,
+    "nativescript-geolocation": true,
     "nativescript-social-share": true,
     "nativescript-theme-core": true,
     "tns-core-modules": true,

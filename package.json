@@ -13,6 +13,7 @@
 		"email-validator": "^1.1.1",
 		"nativescript-background-http": "^3.1.0",
 		"nativescript-camera": "^3.2.1",
+		"nativescript-geolocation": "^4.2.3",
 		"nativescript-social-share": "^1.5.0",
 		"nativescript-theme-core": "~1.0.4",
 		"tns-core-modules": "~3.4.0"
