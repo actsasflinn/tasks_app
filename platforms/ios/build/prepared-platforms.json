@@ -1,0 +1,10 @@
+{
+    "email-validator": true,
+    "nativescript-background-http": true,
+    "nativescript-camera": true,
+    "nativescript-social-share": true,
+    "nativescript-theme-core": true,
+    "tns-core-modules": true,
+    "nativescript-permissions": true,
+    "tns-core-modules-widgets": true
+}
