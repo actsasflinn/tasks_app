@@ -51,10 +51,16 @@ exports.add = function() {
         message: "An error occurred while adding an item to your list.",
         okButtonText: "OK"
       });
+    })
+    .then(function() {
+      var navigationEntry = {
+        moduleName: "views/picture/picture",
+        context: { pictureName: pageData.get("item") },
+      };
+      // Empty the input field
+      pageData.set("item", "");
+      frameModule.topmost().navigate(navigationEntry);
     });
-
-  // Empty the input field
-  pageData.set("item", "");
 };
 
 exports.delete = function(args) {
@@ -64,9 +70,15 @@ exports.delete = function(args) {
 };
 
 exports.picture = function(args) {
+  //var item = args.view.bindingContext;
+  //var index = itemList.indexOf(item);
+  //console.log(JSON.stringify(itemList));
+
+  console.log(JSON.stringify(args.view.bindingContext));
+
   var navigationEntry = {
     moduleName: "views/picture/picture",
-    context: { pictureName: args.view.text },
+    context: { item: args.view.bindingContext },
   };
   frameModule.topmost().navigate(navigationEntry);
 };

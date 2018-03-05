@@ -3,11 +3,11 @@ var fetchModule = require("fetch");
 var ObservableArray = require("data/observable-array").ObservableArray;
 
 function ItemListViewModel(items) {
-  var baseUrl = config.apiUrl + "tasks.json";
+  var baseUrl = config.apiUrl + "tasks";
   var viewModel = new ObservableArray(items);
 
   viewModel.load = function() {
-      return fetch(baseUrl, {
+      return fetch(baseUrl + ".json", {
           headers: getCommonHeaders()
       })
       .then(handleErrors)
@@ -20,7 +20,8 @@ function ItemListViewModel(items) {
                 slug: item.slug,
                 name: item.name,
                 description: item.description,
-                image: item.image,
+                picture: item.picture,
+                picture_src: item.picture_src,
               });
           });
       });
@@ -33,7 +34,7 @@ function ItemListViewModel(items) {
   };
 
   viewModel.add = function(item) {
-      return fetch(baseUrl, {
+      return fetch(baseUrl + ".json", {
           method: "POST",
           body: JSON.stringify({
               name: item
@@ -50,13 +51,14 @@ function ItemListViewModel(items) {
             slug: item.slug,
             name: item.name,
             description: item.description,
-            image: item.image,
+            picture: item.picture,
+            picture_src: item.picture_src,
           });
       });
   };
 
   viewModel.delete = function(index) {
-      return fetch(baseUrl + "/" + viewModel.getItem(index).id, {
+      return fetch(baseUrl + "/" + viewModel.getItem(index).id + ".json", {
           method: "DELETE",
           headers: getCommonHeaders()
       })
@@ -72,7 +74,7 @@ function ItemListViewModel(items) {
 function getCommonHeaders() {
   return {
     "Content-Type": "application/json",
-    "Authorization": config.token
+    "Authorization": config.appAuthHeader
   }
 }
 

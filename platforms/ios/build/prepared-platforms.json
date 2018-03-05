@@ -1,5 +1,6 @@
 {
     "email-validator": true,
+    "font-awesome": true,
     "nativescript-background-http": true,
     "nativescript-camera": true,
     "nativescript-geolocation": true,

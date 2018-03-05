@@ -9,7 +9,8 @@ function User(info) {
     // You can add properties to observables on creation
     var viewModel = new observableModule.fromObject({
         email: info.email || "",
-        password: info.password || ""
+        password: info.password || "",
+        apiUrl: config.apiUrl
     });
 
     viewModel.login = function() {
@@ -52,7 +53,7 @@ function User(info) {
 function getCommonHeaders() {
     return {
         "Content-Type": "application/json",
-        "Authorization": config.appUserHeader
+        "Authorization": config.appAuthHeader
     }
 }
 

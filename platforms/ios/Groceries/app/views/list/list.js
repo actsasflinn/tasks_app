@@ -74,9 +74,11 @@ exports.picture = function(args) {
   //var index = itemList.indexOf(item);
   //console.log(JSON.stringify(itemList));
 
+  console.log(JSON.stringify(args.view.bindingContext));
+
   var navigationEntry = {
     moduleName: "views/picture/picture",
-    context: { pictureName: args.view.text },
+    context: { item: args.view.bindingContext },
   };
   frameModule.topmost().navigate(navigationEntry);
 };

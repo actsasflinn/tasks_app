@@ -5,6 +5,8 @@
   <StackLayout orientation="vertical">
     <Image src="res://logo" stretch="none" horizontalAlignment="center" ></Image>
 
+    <TextField id="apiUrl" text="{{ apiUrl }}" autocorrect="false" autocapitalizationType="none" />
+
     <TextField id="email" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
     <TextField secure="true" text="{{ password }}" hint="Password" />
 

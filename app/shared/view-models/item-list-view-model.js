@@ -20,7 +20,8 @@ function ItemListViewModel(items) {
                 slug: item.slug,
                 name: item.name,
                 description: item.description,
-                image: item.image,
+                picture: item.picture,
+                picture_src: item.picture_src,
               });
           });
       });
@@ -50,7 +51,8 @@ function ItemListViewModel(items) {
             slug: item.slug,
             name: item.name,
             description: item.description,
-            image: item.image,
+            picture: item.picture,
+            picture_src: item.picture_src,
           });
       });
   };
@@ -72,7 +74,7 @@ function ItemListViewModel(items) {
 function getCommonHeaders() {
   return {
     "Content-Type": "application/json",
-    "Authorization": config.token
+    "Authorization": config.appAuthHeader
   }
 }
 

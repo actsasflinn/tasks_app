@@ -1,0 +1,12 @@
+<Page loaded="loaded">
+  <ActivityIndicator busy="{{ isUploading }}" />
+  <Page.actionBar>
+    <ActionBar title="{{ pictureName }}" />
+  </Page.actionBar>
+  <GridLayout rows="auto, *, auto">
+    <Image row="1" src="{{ cameraImage }}" id="image" stretch="fill" margin="10"/>
+
+    <TextField id="description" text="{{ description }}" hint="description" row="0" col="0" />
+    <Button text="Take Picture" tap="takePicture"  row="2" padding="10"/>
+  </GridLayout>
+</Page>
