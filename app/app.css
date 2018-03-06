@@ -64,10 +64,13 @@ ActionBar {
       transform:rotate(360deg);
   }
 }
-.fa-check {
-  color: green;
-}
 #itemList .name {
   font-size: 20;
   margin:0;
+}
+.fa-check-circle {
+  color: green;
+}
+.fa-circle {
+  color: #F5F5F5;
 }

@@ -1,7 +1,12 @@
 <Page loaded="loaded">
   <Page.actionBar>
     <ActionBar title="Home">
-      <ActionBar.actionItems />
+      <ActionItem ios.position="left">
+        <Label text="&#xf0ae;" />
+      </ActionItem>
+      <ActionItem ios.position="right">
+        <ActivityIndicator busy="{{ isLoading }}" />
+      </ActionItem>
     </ActionBar>
   </Page.actionBar>
   <GridLayout rows="auto, *" columns="3*, *">
@@ -9,14 +14,12 @@
     <Button text="Add" tap="add" row="0" col="1" />
     <ListView items="{{ itemList }}" id="itemList" row="1" colSpan="3">
       <ListView.itemTemplate>
-        <GridLayout columns="45, *, *" rows="50, *, *">
-<!--          <Label text="&#xf058;" class="fontawesome fa-check" row="0" col="0" /> -->
-          <Label text="&#xf1ce;" class="fontawesome fa-spin" row="0" col="0" />
+        <GridLayout columns="45, *, *" rows="50, *, *" class="fontawesome">
+          <Label text="{{ icon }}" class="{{ icon_class }}" row="0" col="0" />
           <Label text="{{ name }}" tap="picture" row="0" col="1" class="name" />
           <Image src="res://ic_menu_delete" ios:visibility="collapsed" row="0" col="2" tap="delete" />
         </GridLayout>
       </ListView.itemTemplate>
     </ListView>
-    <ActivityIndicator busy="{{ isLoading }}" rowSpan="2" colSpan="2" />
   </GridLayout>
 </Page>

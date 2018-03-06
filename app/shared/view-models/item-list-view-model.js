@@ -22,6 +22,8 @@ function ItemListViewModel(items) {
                 description: item.description,
                 picture: item.picture,
                 picture_src: item.picture_src,
+                icon: String.fromCharCode(item.picture_src === null ? 0xf111 : 0xf058),
+                icon_class: item.picture_src === null ? "fa-circle" : "fa-check-circle"
               });
           });
       });
