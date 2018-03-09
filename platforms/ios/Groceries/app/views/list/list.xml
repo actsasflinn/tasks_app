@@ -2,7 +2,7 @@
   <Page.actionBar>
     <ActionBar title="Home">
       <ActionItem ios.position="left">
-        <Label text="&#xf0ae;" />
+        <Label text="&#xf015;" class="fontawesome" />
       </ActionItem>
       <ActionItem ios.position="right">
         <ActivityIndicator busy="{{ isLoading }}" />
@@ -14,9 +14,9 @@
     <Button text="Add" tap="add" row="0" col="1" />
     <ListView items="{{ itemList }}" id="itemList" row="1" colSpan="3">
       <ListView.itemTemplate>
-        <GridLayout columns="45, *, *" rows="50, *, *" class="fontawesome">
+        <GridLayout columns="45, *, *" rows="50, *, *" class="fontawesome" tap="picture">
           <Label text="{{ icon }}" class="{{ icon_class }}" row="0" col="0" />
-          <Label text="{{ name }}" tap="picture" row="0" col="1" class="name" />
+          <Label text="{{ name }}" row="0" col="1" class="name" />
           <Image src="res://ic_menu_delete" ios:visibility="collapsed" row="0" col="2" tap="delete" />
         </GridLayout>
       </ListView.itemTemplate>

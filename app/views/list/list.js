@@ -52,10 +52,12 @@ exports.add = function() {
         okButtonText: "OK"
       });
     })
-    .then(function() {
+    .then(function(item) {
+      console.log("running...")
+      console.log("item:" + JSON.stringify(item));
       var navigationEntry = {
         moduleName: "views/picture/picture",
-        context: { pictureName: pageData.get("item") },
+        context: { item: item },
       };
       // Empty the input field
       pageData.set("item", "");

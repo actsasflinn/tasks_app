@@ -1,6 +1,7 @@
 var config = require("../../shared/config");
 var fetchModule = require("fetch");
 var ObservableArray = require("data/observable-array").ObservableArray;
+var ItemViewModel = require("./item-view-model");
 
 function ItemListViewModel(items) {
   var baseUrl = config.apiUrl + "tasks";
@@ -15,6 +16,11 @@ function ItemListViewModel(items) {
           return response.json();
       }).then(function(data) {
           data.forEach(function(item) {
+            var i = new ItemViewModel(item);
+            console.log(JSON.stringify(i));
+            viewModel.push(i);
+            return i;
+            /*
               viewModel.push({
                 id: item.id,
                 slug: item.slug,
@@ -22,9 +28,10 @@ function ItemListViewModel(items) {
                 description: item.description,
                 picture: item.picture,
                 picture_src: item.picture_src,
-                icon: String.fromCharCode(item.picture_src === null ? 0xf111 : 0xf058),
-                icon_class: item.picture_src === null ? "fa-circle" : "fa-check-circle"
+                icon: String.fromCharCode(item.picture_src === undefined ? 0xf111 : 0xf058),
+                icon_class: item.picture_src === undefined ? "fa-circle" : "fa-check-circle"
               });
+            */
           });
       });
   };
@@ -48,6 +55,7 @@ function ItemListViewModel(items) {
           return response.json();
       })
       .then(function(item) {
+        console.log(JSON.stringify(item));
           viewModel.push({
             id: item.id,
             slug: item.slug,
@@ -55,6 +63,8 @@ function ItemListViewModel(items) {
             description: item.description,
             picture: item.picture,
             picture_src: item.picture_src,
+            icon: String.fromCharCode(item.picture_src === undefined ? 0xf111 : 0xf058),
+            icon_class: item.picture_src === undefined ? "fa-circle" : "fa-check-circle"
           });
       });
   };
@@ -82,7 +92,7 @@ function getCommonHeaders() {
 
 function handleErrors(response) {
   if (!response.ok) {
-    console.log(JSON.stringify(response));
+    //console.log(JSON.stringify(response));
     throw Error(response.statusText);
   }
   return response;

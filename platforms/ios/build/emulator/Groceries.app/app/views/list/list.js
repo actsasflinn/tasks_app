@@ -53,6 +53,7 @@ exports.add = function() {
       });
     })
     .then(function() {
+      console.log("running...")
       var navigationEntry = {
         moduleName: "views/picture/picture",
         context: { pictureName: pageData.get("item") },

@@ -22,8 +22,9 @@ var pageData = new observableModule.fromObject({
 exports.loaded = function(args) {
   page = args.object;
   var context = page.navigationContext;
-  var id = context.item.id;
-  var item = new ItemViewModel({ id: id });
+//  var id = context.item.id;
+//  var item = new ItemViewModel({ id: id });
+  var item = context.item;
   item.load(item.id, function(loaded) {
     console.log("item"+JSON.stringify(loaded));
     pageData.set("item", loaded);

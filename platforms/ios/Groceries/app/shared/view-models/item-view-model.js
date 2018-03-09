@@ -16,6 +16,8 @@ function Item(item) {
     picture: item.picture || "",
     picture_src: item.picture_src || "",
     isUploading: false,
+    icon: String.fromCharCode(item.picture_src === undefined ? 0xf111 : 0xf058),
+    icon_class: item.picture_src === undefined ? "fa-circle" : "fa-check-circle",
     location: {}
   });
 
@@ -39,6 +41,9 @@ function Item(item) {
       viewModel.picture = data.picture;
       viewModel.picture_src = data.picture_src;
       viewModel.isUploading = false;
+      viewModel.icon = String.fromCharCode(item.picture_src === undefined ? 0xf111 : 0xf058);
+      viewModel.icon_class = item.picture_src === undefined ? "fa-circle" : "fa-check-circle";
+
       viewModel.location = {
         latitude: data.latitude,
         longitude: data.longitude,
@@ -106,7 +111,10 @@ function Item(item) {
 
     task.on("progress", logEvent)
     task.on("error", logEvent)
-    task.on("complete", logEvent)
+    task.on("complete", function(e) {
+      viewModel.icon = String.fromCharCode(0xf058);
+      viewModel.icon_class = "fa-check-circle";
+    });
 
     for(var name in events) {
       task.on(name, events[name]);
