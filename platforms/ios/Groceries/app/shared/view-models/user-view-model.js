@@ -10,11 +10,11 @@ function User(info) {
     var viewModel = new observableModule.fromObject({
         email: info.email || "",
         password: info.password || "",
-        apiUrl: config.apiUrl
+        apiUrl: info.apiUrl || ""
     });
 
     viewModel.login = function() {
-        return fetchModule.fetch(config.apiUrl + "users/login", {
+        return fetchModule.fetch(viewModel.get("apiUrl") + "users/login", {
             method: "POST",
             body: JSON.stringify({
                 email: viewModel.get("email"),

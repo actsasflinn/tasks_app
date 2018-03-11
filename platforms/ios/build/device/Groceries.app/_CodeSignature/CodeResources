@@ -82,7 +82,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		2Gw+mBOJTrWa4z2hbXbl1eyYTXg=
+		52xlh3eOOMvliSGrmTbx4E7j/R8=
 		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Frameworks/NativeScript.framework/NativeScript</key>
 		<data>
-		uK4B2DM/NaayCrWpZui82aL0DCc=
+		bHk1VyAs1peF+LPVXickFyIB1KU=
 		</data>
 		<key>Frameworks/NativeScript.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Frameworks/TNSWidgets.framework/TNSWidgets</key>
 		<data>
-		SI/1J+Rs6A+3DaC/yZwTXVP7x/8=
+		wbP2fY6IVqI8ZYJclSP3e01r4uk=
 		</data>
 		<key>Frameworks/TNSWidgets.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4JtEWYPvdiQ4ro7d90Zh7EsIyLg=
+		R29CF/410Rw4Mhb2+iPwd42VtZY=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		qvfIVx9s9+3oGZEc7EEAanaZ/jQ=
+		n7Mxk7oV9UWUsCgY3/l3K5oqGxo=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		kMYdN5Giktag0aCyogEtx2syYk0=
+		aTLb+UR23741CulrE4ZWugi0rIs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -198,15 +198,19 @@
 		</data>
 		<key>app/app.css</key>
 		<data>
-		aSDU6JPX1+VJABHZL5no5TuBzL4=
+		hVNSWRktF2S0AdpvF05Vd7m4dio=
 		</data>
 		<key>app/app.js</key>
 		<data>
-		7vfQ4diZBAN/NG9pIUMfxmbF9PE=
+		yzcHs4g6sup9orP1gavWrueq7Bc=
 		</data>
-		<key>app/images/apple.jpg</key>
+		<key>app/fonts/fontawesome-webfont.ttf</key>
 		<data>
-		wDOnpIgpZ1tz9dHbU2D/1TpzfgE=
+		E7HqtlqYPHpzvHmXxHnWaUP3xss=
+		</data>
+		<key>app/fonts/fontawesome-webfont.woff</key>
+		<data>
+		KLeCJAs+dtuCThLAJ1SpcxoWdSc=
 		</data>
 		<key>app/package.json</key>
 		<data>
@@ -226,11 +230,15 @@
 		</data>
 		<key>app/shared/view-models/item-list-view-model.js</key>
 		<data>
-		v4XVCrRrJGVWPRa97qBsO4M1BeI=
+		2ZzsGsmeDmDFaaXIQG0NnbctXKg=
+		</data>
+		<key>app/shared/view-models/item-view-model.js</key>
+		<data>
+		MNNVM9QaR2/CwT29s5fOodEoVpM=
 		</data>
 		<key>app/shared/view-models/user-view-model.js</key>
 		<data>
-		g1ZuG13jlcN+xGfDN+toeFUg878=
+		CMpnEc74Tfud4sip0rygphkAK8M=
 		</data>
 		<key>app/tns_modules/email-validator/.npmignore</key>
 		<data>
@@ -263,6 +271,170 @@
 		<key>app/tns_modules/email-validator/test.js</key>
 		<data>
 		uybXml7HzocoWhZKyECQFzJObFI=
+		</data>
+		<key>app/tns_modules/font-awesome/.npmignore</key>
+		<data>
+		3PRwqzo1gQO7iWpTnMA8rtoQ+os=
+		</data>
+		<key>app/tns_modules/font-awesome/HELP-US-OUT.txt</key>
+		<data>
+		T3v5YfG+1Ej2upmuuSGfq/kwupY=
+		</data>
+		<key>app/tns_modules/font-awesome/README.md</key>
+		<data>
+		OIClilDvdRQxfE9HtXB9T9AQbJw=
+		</data>
+		<key>app/tns_modules/font-awesome/css/font-awesome.css</key>
+		<data>
+		AUCVLGTj8rdO9k4FDy/obqtmJMg=
+		</data>
+		<key>app/tns_modules/font-awesome/css/font-awesome.css.map</key>
+		<data>
+		AYnSeHBlCUErrEdF+WyDmE4dWfQ=
+		</data>
+		<key>app/tns_modules/font-awesome/css/font-awesome.min.css</key>
+		<data>
+		USx9eQM+MCipvmG1QM8aaHDIlvg=
+		</data>
+		<key>app/tns_modules/font-awesome/fonts/FontAwesome.otf</key>
+		<data>
+		BIcHvFKsS2VjqqODv+hmCg3ckIw=
+		</data>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.eot</key>
+		<data>
+		2YDCzoc9xDr0YNTVctRBMESZ9AA=
+		</data>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.svg</key>
+		<data>
+		mKiqXPfWLC7/Xwft6NhEuHTvBu0=
+		</data>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.ttf</key>
+		<data>
+		E7HqtlqYPHpzvHmXxHnWaUP3xss=
+		</data>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.woff</key>
+		<data>
+		KLeCJAs+dtuCThLAJ1SpcxoWdSc=
+		</data>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.woff2</key>
+		<data>
+		1vSMun0Hb7by/Wupk6dbncHsvww=
+		</data>
+		<key>app/tns_modules/font-awesome/less/animated.less</key>
+		<data>
+		Qh8sThAZHxSME7ijTl/z9ITUw5M=
+		</data>
+		<key>app/tns_modules/font-awesome/less/bordered-pulled.less</key>
+		<data>
+		osKSE3sXQGGDrQ/b9IgP1ki5pco=
+		</data>
+		<key>app/tns_modules/font-awesome/less/core.less</key>
+		<data>
+		Gjc1IoZhm3idFRoG60t1UeTBqqI=
+		</data>
+		<key>app/tns_modules/font-awesome/less/fixed-width.less</key>
+		<data>
+		7AwkuXGE2rhhd2YPSGuNCM1jbEI=
+		</data>
+		<key>app/tns_modules/font-awesome/less/font-awesome.less</key>
+		<data>
+		n/50ItwjVFCiHwGfQQ7TWe0VH0s=
+		</data>
+		<key>app/tns_modules/font-awesome/less/icons.less</key>
+		<data>
+		AoWpmesa2thoNmZ4wtk2W3cYakU=
+		</data>
+		<key>app/tns_modules/font-awesome/less/larger.less</key>
+		<data>
+		5xGegtxQVA28NHK7p9dCgoFafsw=
+		</data>
+		<key>app/tns_modules/font-awesome/less/list.less</key>
+		<data>
+		9TvCCIShQQ2VC0o2ozDFGBqLVas=
+		</data>
+		<key>app/tns_modules/font-awesome/less/mixins.less</key>
+		<data>
+		PFs2sAaTcrUl7Yu7z2s9TSvtTng=
+		</data>
+		<key>app/tns_modules/font-awesome/less/path.less</key>
+		<data>
+		GvtKhJBZYx927SpRnX+xvQrxSAI=
+		</data>
+		<key>app/tns_modules/font-awesome/less/rotated-flipped.less</key>
+		<data>
+		ld5d6QCXFGkkMLBPnNQ4i+j7qPM=
+		</data>
+		<key>app/tns_modules/font-awesome/less/screen-reader.less</key>
+		<data>
+		cRORMvFw6+dxKDYhD00sSQUVGJk=
+		</data>
+		<key>app/tns_modules/font-awesome/less/stacked.less</key>
+		<data>
+		8EQHe8i+GpicJFJU6B6whNUtKac=
+		</data>
+		<key>app/tns_modules/font-awesome/less/variables.less</key>
+		<data>
+		ilyAB0dwXfFhF8xZjBufUS6HO/4=
+		</data>
+		<key>app/tns_modules/font-awesome/package.json</key>
+		<data>
+		BkAAvGJ6H4facYI8ZBADusYVypg=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_animated.scss</key>
+		<data>
+		ja8Ymy+KQESVuEJLb9G6Yw3Rwtw=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_bordered-pulled.scss</key>
+		<data>
+		FktqCiswfNKT9KkUqw/N9kOVA3Q=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_core.scss</key>
+		<data>
+		VaFKNCZ+3EAbguXuQdi9hPu12j8=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_fixed-width.scss</key>
+		<data>
+		IkQXyiZsZXhJr7K7y23EVYlP84c=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_icons.scss</key>
+		<data>
+		gw4BgzN9FsB7HGODj3WToz7oexU=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_larger.scss</key>
+		<data>
+		lA4cXrxpAoO/ruklYM8V+r7b9qk=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_list.scss</key>
+		<data>
+		S1PuAVE9+LnOdkQrLY8YUWE6Q1w=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_mixins.scss</key>
+		<data>
+		TziBA0pMEcrozJFfKIR3tJijV6I=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_path.scss</key>
+		<data>
+		CAFYrrG/bfWeyYsrvtRNph2cnKM=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_rotated-flipped.scss</key>
+		<data>
+		ygigrz2mPC8qfTwnqHR2N3RMx4U=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_screen-reader.scss</key>
+		<data>
+		LYVjxIj2jnWijVQN2JMB7k7gjJc=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_stacked.scss</key>
+		<data>
+		z2dS7mCa826yk6cZfIjTHsrLvHQ=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/_variables.scss</key>
+		<data>
+		DW1wU1EEtC5g1/RK5sz53gI6e4s=
+		</data>
+		<key>app/tns_modules/font-awesome/scss/font-awesome.scss</key>
+		<data>
+		3YNkjqW8gy+Hw8G/lWxU3sBlqb0=
 		</data>
 		<key>app/tns_modules/nativescript-background-http/.npmignore</key>
 		<data>
@@ -1818,11 +1990,11 @@
 		</data>
 		<key>app/views/list/list.js</key>
 		<data>
-		RCQ8QGXfFSwQsMNP8JBBeVrQMwA=
+		lgPF1xxXfe1ZmT8/XC9DI/KPojk=
 		</data>
 		<key>app/views/list/list.xml</key>
 		<data>
-		RhWHZCtXXOI1XYXqCAEmOKJNlGg=
+		Agh/HHOUaWhTMBmCSedkGp8bQBQ=
 		</data>
 		<key>app/views/login/login.css</key>
 		<data>
@@ -1830,7 +2002,7 @@
 		</data>
 		<key>app/views/login/login.js</key>
 		<data>
-		kX5H9cAtiCdIyWRqylWwJHbT+nE=
+		lXBvrp42gdiZQtQLMSOXNNM27tg=
 		</data>
 		<key>app/views/login/login.xml</key>
 		<data>
@@ -1842,11 +2014,11 @@
 		</data>
 		<key>app/views/picture/picture.js</key>
 		<data>
-		hIp8dGPTZB96ZdnoHl59t7YJZro=
+		4xjh77AEWvPO/VbREq/piDkK5jE=
 		</data>
 		<key>app/views/picture/picture.xml</key>
 		<data>
-		GivJ6Y9/l2dd8/m3OCwMLj+M3+Y=
+		IGv27CVeZIiIpUs6i4vL6dqNVaQ=
 		</data>
 		<key>app/views/register/register.js</key>
 		<data>
@@ -1855,10 +2027,6 @@
 		<key>app/views/register/register.xml</key>
 		<data>
 		C/nk9NLispgCFWeKPBPKborq7UE=
-		</data>
-		<key>build.xcconfig</key>
-		<data>
-		SmPZjtoDCfluVdSU2cb4mrOBsVo=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -2101,11 +2269,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2Gw+mBOJTrWa4z2hbXbl1eyYTXg=
+			52xlh3eOOMvliSGrmTbx4E7j/R8=
 			</data>
 			<key>hash2</key>
 			<data>
-			z04+5I2YwKnodn9GuhH+CsH0uEuOubzYc1+RSH//SrY=
+			pTDVadtt3jvKxZFXuDXnKVdwv2NRJ/rh0cpxjfAKP54=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
@@ -2123,11 +2291,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uK4B2DM/NaayCrWpZui82aL0DCc=
+			bHk1VyAs1peF+LPVXickFyIB1KU=
 			</data>
 			<key>hash2</key>
 			<data>
-			W0cf5v/rtyONE740CZZzO++wqebXzjp7Xu9E4rGC/cA=
+			IJOAvJfAdt0Q1Lr3NGvT0lX/AIznBSmG9iOwqyeyOgk=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/_CodeSignature/CodeResources</key>
@@ -2156,11 +2324,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SI/1J+Rs6A+3DaC/yZwTXVP7x/8=
+			wbP2fY6IVqI8ZYJclSP3e01r4uk=
 			</data>
 			<key>hash2</key>
 			<data>
-			vwdjQnH12MCwQBkbfKa+2vzCcTSHbfkKcR76RyNw72M=
+			xP0n+ccawv7yuRtwHPzcdSpKoaC7LaEek1vegui6bKc=
 			</data>
 		</dict>
 		<key>Frameworks/TNSWidgets.framework/_CodeSignature/CodeResources</key>
@@ -2354,11 +2522,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qvfIVx9s9+3oGZEc7EEAanaZ/jQ=
+			n7Mxk7oV9UWUsCgY3/l3K5oqGxo=
 			</data>
 			<key>hash2</key>
 			<data>
-			WpfVZOJrfVash2cOWQvjCS9V2YWxvCticg6d3N/cvQU=
+			PIHAd+vM9ce9IvmJdTVpuBU7Wr+kIVgux3E4zvL73uc=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -2376,11 +2544,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kMYdN5Giktag0aCyogEtx2syYk0=
+			aTLb+UR23741CulrE4ZWugi0rIs=
 			</data>
 			<key>hash2</key>
 			<data>
-			+Hr678Fa1H7e38fxiHlQ0ABfcyW4xEPY8suCeQKjhBU=
+			e4+oDZpV7tWV48GfxUqMjpOsOltaG0emLAAai1XgASs=
 			</data>
 		</dict>
 		<key>app/README.md</key>
@@ -2398,33 +2566,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aSDU6JPX1+VJABHZL5no5TuBzL4=
+			hVNSWRktF2S0AdpvF05Vd7m4dio=
 			</data>
 			<key>hash2</key>
 			<data>
-			+b7hLdMyTJDC4z63tNRLkOupPDXnP28zvArM4kkuaY0=
+			/E8SPQQ28ze1REb7+oWOSxGc4+GMmoCKg6Dz0UPjAHc=
 			</data>
 		</dict>
 		<key>app/app.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7vfQ4diZBAN/NG9pIUMfxmbF9PE=
+			yzcHs4g6sup9orP1gavWrueq7Bc=
 			</data>
 			<key>hash2</key>
 			<data>
-			cVOcWv1GWdybwd5SiULld38gdQWMvJgPgnmcrDA2M00=
+			cctLHqwTpLczCFpFHxLcFJbwdhbT4d+vErB//pqFmuI=
 			</data>
 		</dict>
-		<key>app/images/apple.jpg</key>
+		<key>app/fonts/fontawesome-webfont.ttf</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wDOnpIgpZ1tz9dHbU2D/1TpzfgE=
+			E7HqtlqYPHpzvHmXxHnWaUP3xss=
 			</data>
 			<key>hash2</key>
 			<data>
-			WY9OwIgKgwvtsvXcQSgKqhhHK8ceSDLqu6UWkuNnruM=
+			qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg=
+			</data>
+		</dict>
+		<key>app/fonts/fontawesome-webfont.woff</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KLeCJAs+dtuCThLAJ1SpcxoWdSc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ugxZ3rVFD1y0Gz+TYJ7i0NmVQVh33foiPoqKdTNHTwc=
 			</data>
 		</dict>
 		<key>app/package.json</key>
@@ -2475,22 +2654,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v4XVCrRrJGVWPRa97qBsO4M1BeI=
+			2ZzsGsmeDmDFaaXIQG0NnbctXKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			EWmoeQt9ddUtf4WMXlegGOW1fTMjfAgXAijcPvQJUAc=
+			Lnfle8zf37hdw1g1dquDsbP54KPFaDmseDcLHlxuiXk=
+			</data>
+		</dict>
+		<key>app/shared/view-models/item-view-model.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MNNVM9QaR2/CwT29s5fOodEoVpM=
+			</data>
+			<key>hash2</key>
+			<data>
+			hKfnMyoD9FvEZoIabEeJzyVWChIJhIkmpdQQPIsgu1g=
 			</data>
 		</dict>
 		<key>app/shared/view-models/user-view-model.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g1ZuG13jlcN+xGfDN+toeFUg878=
+			CMpnEc74Tfud4sip0rygphkAK8M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Eh+PGvw2l4k0G+PJc81KcuRnWd70MBodAVP+mBk9weQ=
+			CjqJJoIqzAxD6v7CHZBdbioqhUE85gO47lqyj4OKJoU=
 			</data>
 		</dict>
 		<key>app/tns_modules/email-validator/.npmignore</key>
@@ -2579,6 +2769,457 @@
 			<key>hash2</key>
 			<data>
 			kJeWnAVNtKANv2rOwm4WLm/3wZtIJIBHVWY5eTU0+dw=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/.npmignore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3PRwqzo1gQO7iWpTnMA8rtoQ+os=
+			</data>
+			<key>hash2</key>
+			<data>
+			R9z4g6OaOYi42SpVRnQM5YMaAYL/LLOpIbrcJkqPD3g=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/HELP-US-OUT.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T3v5YfG+1Ej2upmuuSGfq/kwupY=
+			</data>
+			<key>hash2</key>
+			<data>
+			MDTrsPfEKJZkj1MD40mc19/k2wEPlXj/RftCryiE7Ws=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OIClilDvdRQxfE9HtXB9T9AQbJw=
+			</data>
+			<key>hash2</key>
+			<data>
+			YQQn/pF/K1HvabW/qae/4/y6WbHMr4alAKR+X6HaMis=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/css/font-awesome.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AUCVLGTj8rdO9k4FDy/obqtmJMg=
+			</data>
+			<key>hash2</key>
+			<data>
+			NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/css/font-awesome.css.map</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AYnSeHBlCUErrEdF+WyDmE4dWfQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			OnWOmMndQbWhR065+2rXauW/hVr2psKMCgrws0DJhg8=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/css/font-awesome.min.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			USx9eQM+MCipvmG1QM8aaHDIlvg=
+			</data>
+			<key>hash2</key>
+			<data>
+			eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/fonts/FontAwesome.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BIcHvFKsS2VjqqODv+hmCg3ckIw=
+			</data>
+			<key>hash2</key>
+			<data>
+			RE3UNmYV/8ShbQErL6kBNwZdPMtBD6b9Xk3de15P/NU=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.eot</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2YDCzoc9xDr0YNTVctRBMESZ9AA=
+			</data>
+			<key>hash2</key>
+			<data>
+			e/yrbbmdXPvxcFygU23ceFhUMsxfpBu9etDwCQM7KXk=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mKiqXPfWLC7/Xwft6NhEuHTvBu0=
+			</data>
+			<key>hash2</key>
+			<data>
+			rWFXkmwWIrpOHQPUePFUE2hSS/xG9R5C/g2UX37zI+Q=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E7HqtlqYPHpzvHmXxHnWaUP3xss=
+			</data>
+			<key>hash2</key>
+			<data>
+			qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.woff</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KLeCJAs+dtuCThLAJ1SpcxoWdSc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ugxZ3rVFD1y0Gz+TYJ7i0NmVQVh33foiPoqKdTNHTwc=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/fonts/fontawesome-webfont.woff2</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1vSMun0Hb7by/Wupk6dbncHsvww=
+			</data>
+			<key>hash2</key>
+			<data>
+			Kt78vAQefRj88tQXh53FoJmXqmTWdbejxLbOM9oT8/4=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/animated.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Qh8sThAZHxSME7ijTl/z9ITUw5M=
+			</data>
+			<key>hash2</key>
+			<data>
+			xwNUI9Wh4D02vP1kZUgeTE1ckfMW+oeKblEDr+Gwu/Y=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/bordered-pulled.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			osKSE3sXQGGDrQ/b9IgP1ki5pco=
+			</data>
+			<key>hash2</key>
+			<data>
+			49FoopK6M9TjIVkZljowTcJXMqc8693m5+vk1Hq0PrY=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/core.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gjc1IoZhm3idFRoG60t1UeTBqqI=
+			</data>
+			<key>hash2</key>
+			<data>
+			pKk9WYE09lasbHoKXzda+pQeceNI5o7PPNb+t2Fqz54=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/fixed-width.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7AwkuXGE2rhhd2YPSGuNCM1jbEI=
+			</data>
+			<key>hash2</key>
+			<data>
+			DvhToxknQtIH6g55Pci8xjIty55Q1B9LmBxOusLax6w=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/font-awesome.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n/50ItwjVFCiHwGfQQ7TWe0VH0s=
+			</data>
+			<key>hash2</key>
+			<data>
+			LfYjBaihTgnsrVihVaR48cjBExj0BTYL5oMhn2Kz6iQ=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/icons.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AoWpmesa2thoNmZ4wtk2W3cYakU=
+			</data>
+			<key>hash2</key>
+			<data>
+			TVhe7umPSCbFR+AwppBpDqVqTe3oBvyBdjQqvs0G/qE=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/larger.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5xGegtxQVA28NHK7p9dCgoFafsw=
+			</data>
+			<key>hash2</key>
+			<data>
+			38edQyWATpreIatlFFsjscQZPSSok2kLxHtcBznKPAo=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/list.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9TvCCIShQQ2VC0o2ozDFGBqLVas=
+			</data>
+			<key>hash2</key>
+			<data>
+			Akq7kw5mafIV3e4Z9YB3Vx8cq7eu4SdL+WsibClrc9M=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/mixins.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PFs2sAaTcrUl7Yu7z2s9TSvtTng=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZcS7cTh3IEP6/SFnt0wP16wV5Xunh3rezeSwmSlQZww=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/path.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GvtKhJBZYx927SpRnX+xvQrxSAI=
+			</data>
+			<key>hash2</key>
+			<data>
+			oNy7zTl29ZEWJowQl2fDuY/jWIcvbp/BoNJqM30nK48=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/rotated-flipped.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ld5d6QCXFGkkMLBPnNQ4i+j7qPM=
+			</data>
+			<key>hash2</key>
+			<data>
+			1n35VIjuyE0tDK95cnglqP9LLfkMYEFReD4+wjiNrTg=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/screen-reader.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cRORMvFw6+dxKDYhD00sSQUVGJk=
+			</data>
+			<key>hash2</key>
+			<data>
+			sy/3ghp7CmSfkgKgLuuM6I/mcetS1h7OUKq9vOIREMY=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/stacked.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8EQHe8i+GpicJFJU6B6whNUtKac=
+			</data>
+			<key>hash2</key>
+			<data>
+			P53mw+DxorxxV5pBfXxBX4Lyo9P0eSFhqFiLuL3XVFA=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/less/variables.less</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ilyAB0dwXfFhF8xZjBufUS6HO/4=
+			</data>
+			<key>hash2</key>
+			<data>
+			43F0Ipdiktj9xLKp7QK40L5VrVC4bpv/dHYeXM+UuDk=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BkAAvGJ6H4facYI8ZBADusYVypg=
+			</data>
+			<key>hash2</key>
+			<data>
+			iZFQ//oVBF0vfYUVMLPI/+MkOOWvFMJVB7cxPTaIdYg=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_animated.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ja8Ymy+KQESVuEJLb9G6Yw3Rwtw=
+			</data>
+			<key>hash2</key>
+			<data>
+			kA4lMcp1RPqPbg25mWvSjTlwGF7YEHF6Ckh52hNeVHg=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_bordered-pulled.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FktqCiswfNKT9KkUqw/N9kOVA3Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			0dKNQFuTKDE8hD98GkCVHuGnONYyCBvrdqDgcrQH9Uk=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_core.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VaFKNCZ+3EAbguXuQdi9hPu12j8=
+			</data>
+			<key>hash2</key>
+			<data>
+			5ugZSbCsRmg5xSOaFFCWfsMq8w63wl0YRVaWIeihyPw=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_fixed-width.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IkQXyiZsZXhJr7K7y23EVYlP84c=
+			</data>
+			<key>hash2</key>
+			<data>
+			uLCzR44E6GjvDNX6P7KRUk8ZMhRNG9NCfRVq/jaRlOk=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_icons.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gw4BgzN9FsB7HGODj3WToz7oexU=
+			</data>
+			<key>hash2</key>
+			<data>
+			qPG11qGhmSdIq5VBJEP7KK/Aq3Edhvvfp9igsAzuOkg=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_larger.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lA4cXrxpAoO/ruklYM8V+r7b9qk=
+			</data>
+			<key>hash2</key>
+			<data>
+			+06OfV0DB02kAvVE02vWrbatrtetgWxLyz9T/gMnPBc=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_list.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S1PuAVE9+LnOdkQrLY8YUWE6Q1w=
+			</data>
+			<key>hash2</key>
+			<data>
+			1UMKZpX+vNnn9YmAQa7StiBg0bjXt4Lg9JdSEKDd844=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_mixins.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TziBA0pMEcrozJFfKIR3tJijV6I=
+			</data>
+			<key>hash2</key>
+			<data>
+			Lv48Zlxf7Mb7P2rN8YX9wLGHGtB0OB+jm1gcr8X6gs4=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_path.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CAFYrrG/bfWeyYsrvtRNph2cnKM=
+			</data>
+			<key>hash2</key>
+			<data>
+			DgNeIbvffxTxRT+hJqrznwtiR5Rx88umSaZN0tqlTiY=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_rotated-flipped.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ygigrz2mPC8qfTwnqHR2N3RMx4U=
+			</data>
+			<key>hash2</key>
+			<data>
+			/waG12rN41gdZ5vodPv3OovK5BEPp7bHqgirIEp/O3o=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_screen-reader.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LYVjxIj2jnWijVQN2JMB7k7gjJc=
+			</data>
+			<key>hash2</key>
+			<data>
+			HJZMhNXsM/01kY8mDqNQOqqks/EJCzQqbpjbbQR9Xjg=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_stacked.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z2dS7mCa826yk6cZfIjTHsrLvHQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			cPM/0HmrcIWHxjtYhOBLMaP0b9M5I8sEZiH/GLG9mdI=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/_variables.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DW1wU1EEtC5g1/RK5sz53gI6e4s=
+			</data>
+			<key>hash2</key>
+			<data>
+			8tBpoyNjOIg7wQtoKA4KLJZtrUFOJoQ/6no1FJ+V9k8=
+			</data>
+		</dict>
+		<key>app/tns_modules/font-awesome/scss/font-awesome.scss</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3YNkjqW8gy+Hw8G/lWxU3sBlqb0=
+			</data>
+			<key>hash2</key>
+			<data>
+			TLSgDKCLbkVuCfL77s3FqxP3yRvL6iYzAMgUrvP/z0M=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-background-http/.npmignore</key>
@@ -6853,22 +7494,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RCQ8QGXfFSwQsMNP8JBBeVrQMwA=
+			lgPF1xxXfe1ZmT8/XC9DI/KPojk=
 			</data>
 			<key>hash2</key>
 			<data>
-			7Eu+TMdk1yTvsiAlxnM1LpU5UbbmM+dXmxK6uFvbkfs=
+			LOUYG1m/cS0wp7YnP1gB8twAu7R2iSzSE4goO87TD0Y=
 			</data>
 		</dict>
 		<key>app/views/list/list.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RhWHZCtXXOI1XYXqCAEmOKJNlGg=
+			Agh/HHOUaWhTMBmCSedkGp8bQBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kj9gwLqvk1oEpQFLYXTavBjwlwEhsiQ7DIyrHDg33RI=
+			V2ioO8rhQmrWYRxk7VAh8zQtpuEzQSBnfNw6e7XP0CI=
 			</data>
 		</dict>
 		<key>app/views/login/login.css</key>
@@ -6886,11 +7527,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kX5H9cAtiCdIyWRqylWwJHbT+nE=
+			lXBvrp42gdiZQtQLMSOXNNM27tg=
 			</data>
 			<key>hash2</key>
 			<data>
-			wGJFXjDPNKKyzv17msr9QUQtc4Bs/rNI9seej8yNaEc=
+			TRaws50EXUBfBr1xr9XGb6D/akFXzUyFzbg8GjtkA6g=
 			</data>
 		</dict>
 		<key>app/views/login/login.xml</key>
@@ -6919,22 +7560,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hIp8dGPTZB96ZdnoHl59t7YJZro=
+			4xjh77AEWvPO/VbREq/piDkK5jE=
 			</data>
 			<key>hash2</key>
 			<data>
-			VIyUMOdKGIcjWO8njI9+eDe+n0e7yLcp0DWPtBgNmZs=
+			pHb2pkYy2tIN8ZMbdhWK/m4EBGt8iu4MAH2AAWLnw8E=
 			</data>
 		</dict>
 		<key>app/views/picture/picture.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GivJ6Y9/l2dd8/m3OCwMLj+M3+Y=
+			IGv27CVeZIiIpUs6i4vL6dqNVaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			OW1qObVc7+CUirO96qCQULKl4Ld33Z5lBtJIn8Rlzfo=
+			KG8Y5PRW77B0PXpsfHQA7XtoQpCRimFwy+i67uO2y88=
 			</data>
 		</dict>
 		<key>app/views/register/register.js</key>
@@ -6957,17 +7598,6 @@
 			<key>hash2</key>
 			<data>
 			5bPx/pDjWcSyqGq7jqDqJALq220M+hX3bNM/pD916LU=
-			</data>
-		</dict>
-		<key>build.xcconfig</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SmPZjtoDCfluVdSU2cb4mrOBsVo=
-			</data>
-			<key>hash2</key>
-			<data>
-			ASqYOGbpg/5rbOm46CFpoC9rs75LW92/2Teqy1rOMSs=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

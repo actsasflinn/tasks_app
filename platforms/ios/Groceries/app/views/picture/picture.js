@@ -12,50 +12,47 @@ var http = require("http");
 var geolocation = require("nativescript-geolocation");
 
 var page;
+var item;
 
 var ItemViewModel = require("../../shared/view-models/item-view-model");
-var pageData = new observableModule.fromObject({
-  item: null,
-  isLoading: true
-});
+//var pageData = new observableModule.fromObject({
+//  item: null,
+//  isLoading: true
+//});
 
 exports.loaded = function(args) {
   page = args.object;
-  var context = page.navigationContext;
-//  var id = context.item.id;
-//  var item = new ItemViewModel({ id: id });
-  var item = context.item;
+  var parentContext = page.navigationContext;
+  item = parentContext.item;
+//  pageData.set("item", item);
+  page.bindingContext = item;
+
   item.load(item.id, function(loaded) {
     console.log("item"+JSON.stringify(loaded));
-    pageData.set("item", loaded);
-    page.bindingContext = pageData;
+    //pageData.set("item", loaded);
+    page.bindingContext = loaded;
 
-    http.getImage(loaded.picture_src).then(function(r) {
-      loaded.picture = r;
-      pageData.set("item", loaded);
-      pageData.set("isLoading", false);
+    http.getImage(loaded.picture_src).then(function(response) {
+      item.set("loading", false);
+      item.picture = response;
+
+      //loaded.picture = response;
+      //pageData.set("item", loaded);
+      //page.bindingContext = item;
     }, function(err) {
-      pageData.set("isLoading", false);
+      item.set("loading", false);
     });
 
-    console.log("pageData: " + JSON.stringify(pageData));
+    console.log("pageData: " + JSON.stringify(item));
   });
-
-/*
-  geolocation.isEnabled().then(function (isEnabled) {
-    if (!isEnabled) {
-      geolocation.enableLocationRequest().then(function () {
-      }, function (e) {
-        console.log("Error: " + (e.message || e));
-      });
-    }
-  }, function (e) {
-      console.log("Error: " + (e.message || e));
-  });
-*/
 };
 
-exports.takePicture = function() {
+exports.back = function(args) {
+  item.save();
+  frameModule.topmost().navigate({ moduleName: "views/list/list", clearHistory: true });
+};
+
+exports.takePicture = function(args) {
   var isAvailable = camera.isAvailable(); 
 //  if (isAvailable) {
     camera.requestPermissions().then(function() {
@@ -66,36 +63,23 @@ exports.takePicture = function() {
           var image = new imageModule.Image();
           image.src = imageAsset;
 
-          var item = pageData.get("item");
-          item.picture = imageAsset;
+          //var item = pageData.get("item");
+          item.set("picture", imageAsset);
 
           var source = new imageSource.ImageSource();
           source.fromAsset(imageAsset).then(function(imageSource) {
             var folder = fs.knownFolders.documents().path;
-            var fileName = "test.png";
+            var fileName = "image_"+ item.id +".png";
             var path = fs.path.join(folder, fileName);
             var saved = imageSource.saveToFile(path, "png");
-            item.picture_src = path;
+            item.set("picture_src", path);
 
             geolocation.getCurrentLocation({desiredAccuracy: 3, updateDistance: 10, maximumAge: 20000, timeout: 20000}).
             then(function(location) {
-              item.location = location;
+              item.set("location", location);
               if (location) {
-                console.log("location:" + JSON.stringify(location));
-
-                item.save({
-                  progress: function() {
-                    pageData.set("isLoading", true);
-                  },
-                  error: function() {
-                    pageData.set("isLoading", false);
-                  },
-                  complete: function() {
-                    console.log("*****complete*****");
-                    pageData.set("isLoading", false);
-                  }
-                });
-                frameModule.topmost().goBack();
+                item.save();
+                frameModule.topmost().navigate({ moduleName: "views/list/list", clearHistory: true });
               }
             }, function(e){
               console.log("Error: " + e.message);
@@ -117,7 +101,7 @@ exports.takePicture = function() {
 
 function handleErrors(response) {
   if (!response.ok) {
-    console.log(JSON.stringify(response));
+    //console.log(JSON.stringify(response));
     throw Error(response.statusText);
   }
   return response;

@@ -7,7 +7,6 @@ var session = bghttpModule.session("image-upload");
 function Item(item) {
   item = item || {};
 
-  // You can add properties to observables on creation
   var viewModel = new observableModule.fromObject({
     id: item.id || "",
     slug: item.slug || "",
@@ -15,14 +14,61 @@ function Item(item) {
     description: item.description || "",
     picture: item.picture || "",
     picture_src: item.picture_src || "",
-    isUploading: false,
+    icon: String.fromCharCode(global.uploading.get(item.id) ? 0xf110 : (item.picture_src === undefined ? 0xf111 : 0xf058)),
+    icon_class: (global.uploading.get(item.id) ? "fa-spin" : (item.picture_src === undefined ? "fa-circle" : "fa-check-circle")),
+    icon_id: "icon_" + item.id,
+    loading: false,
     location: {}
   });
+
+  global.uploaded.on(observableModule.Observable.propertyChangeEvent, function(propertyChangeData){
+    console.log("uploaded change event:"+propertyChangeData.propertyName);
+    if (propertyChangeData.propertyName == viewModel.id && propertyChangeData.value == true) {
+      console.log("uploaded true:"+propertyChangeData.value);
+
+      viewModel.set("icon", String.fromCharCode(0xf058));
+      viewModel.set("icon_class", "fa-check-circle");
+    }
+  });
+
+  global.uploading.on(observableModule.Observable.propertyChangeEvent, function(propertyChangeData){
+    console.log("uploading change event:"+propertyChangeData.propertyName);
+    if (propertyChangeData.propertyName == viewModel.id && propertyChangeData.value == true) {
+      console.log("uploading true:"+propertyChangeData.value);
+
+      viewModel.set("icon", String.fromCharCode(0xf110));
+      viewModel.set("icon_class", "fa-spin");
+    }
+  });
+
+  viewModel.uploaded = function() {
+    global.uploading.set(viewModel.id, false);
+    global.uploaded.set(viewModel.id, true);
+    console.log("completed uploading item: " + viewModel.id);
+  };
+
+  viewModel.uploading = function() {
+    global.uploading.set(viewModel.id, true);
+    global.uploaded.set(viewModel.id, false);
+    console.log("uploading item: " + viewModel.id);
+  };
+
+  viewModel.isUploaded = function() {
+    return global.uploaded.get(viewModel.id);
+  };
+
+  viewModel.isLoading = function() {
+    return viewModel.loading || global.uploading.get(viewModel.id);
+  };
+
+  viewModel.isUploading = function() {
+    return global.uploading.get(viewModel.id);
+  };
 
   viewModel.load = function(id, complete) {
     id = id || "";
     complete = complete || function() {};
-    viewModel.isUploading = true;
+
     return fetchModule.fetch(config.apiUrl + "tasks/" + id + ".json", {
       method: "GET",
       headers: getCommonHeaders()
@@ -38,7 +84,11 @@ function Item(item) {
       viewModel.description = data.description;
       viewModel.picture = data.picture;
       viewModel.picture_src = data.picture_src;
-      viewModel.isUploading = false;
+      viewModel.icon = String.fromCharCode(global.uploading.get(data.id) ? 0xf110 : (data.picture_src === undefined ? 0xf111 : 0xf058));
+      viewModel.icon_class = (global.uploading.get(data.id) ? "fa-spin" : (data.picture_src === undefined ? "fa-circle" : "fa-check-circle"));
+      viewModel.icon_id = "icon_" + data.id;
+      viewModel.loading = false;
+
       viewModel.location = {
         latitude: data.latitude,
         longitude: data.longitude,
@@ -58,6 +108,7 @@ function Item(item) {
   };
 
   viewModel.save = function(events) {
+    events = events || {};
     console.log("save");
 
     var url = config.apiUrl + "tasks";
@@ -99,19 +150,20 @@ function Item(item) {
     var task = session.multipartUpload(params, request);
 
     function logEvent(e) {
-      console.log("currentBytes: " + e.currentBytes);
-      console.log("totalBytes: " + e.totalBytes);
-      console.log("eventName: " + e.eventName);
+//      console.log("currentBytes: " + e.currentBytes);
+//      console.log("totalBytes: " + e.totalBytes);
+//      console.log("eventName: " + e.eventName);
+        console.log(".");
     }
 
-    task.on("progress", logEvent)
+    task.on("progress", viewModel.uploading)
     task.on("error", logEvent)
-    task.on("complete", logEvent)
+    task.on("complete", viewModel.uploaded);
 
     for(var name in events) {
       task.on(name, events[name]);
     }
-  }
+  };
 
   return viewModel;
 }

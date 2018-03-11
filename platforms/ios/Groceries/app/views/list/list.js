@@ -2,10 +2,10 @@ var swipeDelete = require("../../shared/utils/ios-swipe-delete");
 var dialogsModule = require("ui/dialogs");
 var frameModule = require("ui/frame");
 var observableModule = require("data/observable")
+
 var page;
 
 var ItemListViewModel = require("../../shared/view-models/item-list-view-model");
-
 var itemList = new ItemListViewModel([]);
 var pageData = new observableModule.fromObject({
   itemList: itemList,

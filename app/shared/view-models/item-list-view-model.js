@@ -8,6 +8,7 @@ function ItemListViewModel(items) {
   var viewModel = new ObservableArray(items);
 
   viewModel.load = function() {
+    console.log("loading...");
       return fetch(baseUrl + ".json", {
           headers: getCommonHeaders()
       })
@@ -17,22 +18,11 @@ function ItemListViewModel(items) {
       }).then(function(data) {
           data.forEach(function(item) {
             var i = new ItemViewModel(item);
-            console.log(JSON.stringify(i));
+            //console.log(JSON.stringify(i));
             viewModel.push(i);
-            return i;
-            /*
-              viewModel.push({
-                id: item.id,
-                slug: item.slug,
-                name: item.name,
-                description: item.description,
-                picture: item.picture,
-                picture_src: item.picture_src,
-                icon: String.fromCharCode(item.picture_src === undefined ? 0xf111 : 0xf058),
-                icon_class: item.picture_src === undefined ? "fa-circle" : "fa-check-circle"
-              });
-            */
+            //return i;
           });
+          return viewModel;
       });
   };
 
@@ -55,17 +45,14 @@ function ItemListViewModel(items) {
           return response.json();
       })
       .then(function(item) {
-        console.log(JSON.stringify(item));
-          viewModel.push({
-            id: item.id,
-            slug: item.slug,
-            name: item.name,
-            description: item.description,
-            picture: item.picture,
-            picture_src: item.picture_src,
-            icon: String.fromCharCode(item.picture_src === undefined ? 0xf111 : 0xf058),
-            icon_class: item.picture_src === undefined ? "fa-circle" : "fa-check-circle"
-          });
+          //console.log(JSON.stringify(item));
+          global.uploaded.set(item.id, false);
+          global.uploading.set(item.id, false);
+
+          var i = new ItemViewModel(item);
+          console.log(JSON.stringify(i));
+          viewModel.push(i);
+          return i;
       });
   };
 

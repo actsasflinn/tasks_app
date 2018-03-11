@@ -1,12 +1,14 @@
 var config = require("../../shared/config");
 var fetchModule = require("fetch");
 var ObservableArray = require("data/observable-array").ObservableArray;
+var ItemViewModel = require("./item-view-model");
 
 function ItemListViewModel(items) {
   var baseUrl = config.apiUrl + "tasks";
   var viewModel = new ObservableArray(items);
 
   viewModel.load = function() {
+    console.log("loading...");
       return fetch(baseUrl + ".json", {
           headers: getCommonHeaders()
       })
@@ -15,17 +17,12 @@ function ItemListViewModel(items) {
           return response.json();
       }).then(function(data) {
           data.forEach(function(item) {
-              viewModel.push({
-                id: item.id,
-                slug: item.slug,
-                name: item.name,
-                description: item.description,
-                picture: item.picture,
-                picture_src: item.picture_src,
-                icon: String.fromCharCode(item.picture_src === null ? 0xf111 : 0xf058),
-                icon_class: item.picture_src === null ? "fa-circle" : "fa-check-circle"
-              });
+            var i = new ItemViewModel(item);
+            //console.log(JSON.stringify(i));
+            viewModel.push(i);
+            //return i;
           });
+          return viewModel;
       });
   };
 
@@ -48,16 +45,14 @@ function ItemListViewModel(items) {
           return response.json();
       })
       .then(function(item) {
-          viewModel.push({
-            id: item.id,
-            slug: item.slug,
-            name: item.name,
-            description: item.description,
-            picture: item.picture,
-            picture_src: item.picture_src,
-            icon: String.fromCharCode(item.picture_src === null ? 0xf111 : 0xf058),
-            icon_class: item.picture_src === null ? "fa-circle" : "fa-check-circle"
-          });
+          //console.log(JSON.stringify(item));
+          global.uploaded.set(item.id, false);
+          global.uploading.set(item.id, false);
+
+          var i = new ItemViewModel(item);
+          console.log(JSON.stringify(i));
+          viewModel.push(i);
+          return i;
       });
   };
 

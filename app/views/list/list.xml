@@ -15,7 +15,7 @@
     <ListView items="{{ itemList }}" id="itemList" row="1" colSpan="3">
       <ListView.itemTemplate>
         <GridLayout columns="45, *, *" rows="50, *, *" class="fontawesome" tap="picture">
-          <Label text="{{ icon }}" class="{{ icon_class }}" row="0" col="0" />
+          <Label text="{{ icon }}" class="{{ icon_class }}" id="{{ icon_id }}" row="0" col="0" />
           <Label text="{{ name }}" row="0" col="1" class="name" />
           <Image src="res://ic_menu_delete" ios:visibility="collapsed" row="0" col="2" tap="delete" />
         </GridLayout>

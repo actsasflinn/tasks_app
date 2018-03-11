@@ -1,12 +1,14 @@
 <Page loaded="loaded">
-  <ActivityIndicator busy="{{ isUploading }}" />
+  <ActivityIndicator busy="{{ isLoading }}" />
   <Page.actionBar>
-    <ActionBar title="{{ item.name }}" />
+    <ActionBar title="{{ name }}">
+      <NavigationButton text="Back" android.systemIcon="ic_menu_back" tap="back"/>
+    </ActionBar>
   </Page.actionBar>
   <GridLayout rows="auto, *, auto">
-    <Image row="1" src="{{ item.picture }}" id="picture" stretch="fill" margin="10"/>
+    <Image row="1" src="{{ picture }}" id="picture" stretch="fill" margin="10"/>
 
-    <TextField id="description" text="{{ item.description }}" hint="description" row="0" col="0" />
+    <TextField id="description" text="{{ description }}" hint="description" row="0" col="0" />
     <Button text="Take Picture" tap="takePicture"  row="2" padding="10"/>
   </GridLayout>
 </Page>

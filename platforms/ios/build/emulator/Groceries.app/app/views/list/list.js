@@ -2,10 +2,10 @@ var swipeDelete = require("../../shared/utils/ios-swipe-delete");
 var dialogsModule = require("ui/dialogs");
 var frameModule = require("ui/frame");
 var observableModule = require("data/observable")
+
 var page;
 
 var ItemListViewModel = require("../../shared/view-models/item-list-view-model");
-
 var itemList = new ItemListViewModel([]);
 var pageData = new observableModule.fromObject({
   itemList: itemList,
@@ -52,11 +52,12 @@ exports.add = function() {
         okButtonText: "OK"
       });
     })
-    .then(function() {
+    .then(function(item) {
       console.log("running...")
+      console.log("item:" + JSON.stringify(item));
       var navigationEntry = {
         moduleName: "views/picture/picture",
-        context: { pictureName: pageData.get("item") },
+        context: { item: item },
       };
       // Empty the input field
       pageData.set("item", "");

@@ -7,7 +7,7 @@ var UserViewModel = require("../../shared/view-models/user-view-model");
 var user = new UserViewModel({
   email: "username@domain.com",
   password: "password",
-  apiUrl: "foo"
+  apiUrl: config.apiUrl
 });
 
 exports.loaded = function(args) {
@@ -31,6 +31,7 @@ exports.loaded = function(args) {
 };
 
 exports.signIn = function() {
+  config.apiUrl = user.get("apiUrl")
   user.login()
   .catch(function(error) {
     console.log(error);

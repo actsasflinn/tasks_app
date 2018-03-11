@@ -3,6 +3,7 @@ var dialogsModule = require("ui/dialogs");
 var frameModule = require("ui/frame");
 var observableModule = require("data/observable")
 var page;
+var view = require("ui/core/view");
 
 var ItemListViewModel = require("../../shared/view-models/item-list-view-model");
 
@@ -30,6 +31,25 @@ exports.loaded = function(args) {
         opacity: 1,
         duration: 1000
       });
+
+/*
+      itemList.forEach(function(item) {
+        console.log(item.icon_id);
+        console.log(JSON.stringify(item));
+        var iconView = view.getViewById(listView, item.icon_id);
+        console.log(JSON.stringify(iconView));
+        if (iconView !== undefined) {
+          console.log("animating...");
+
+          iconView.animate({
+              rotate: 360,
+              duration: 3000
+          });
+          console.log("done 1");
+        }
+        console.log("done 2");
+      });
+*/
     });
 };
 
@@ -52,10 +72,12 @@ exports.add = function() {
         okButtonText: "OK"
       });
     })
-    .then(function() {
+    .then(function(item) {
+      console.log("running...")
+      console.log("item:" + JSON.stringify(item));
       var navigationEntry = {
         moduleName: "views/picture/picture",
-        context: { pictureName: pageData.get("item") },
+        context: { item: item },
       };
       // Empty the input field
       pageData.set("item", "");
@@ -74,9 +96,15 @@ exports.picture = function(args) {
   //var index = itemList.indexOf(item);
   //console.log(JSON.stringify(itemList));
 
+  console.log(JSON.stringify(args.view.bindingContext));
+
   var navigationEntry = {
     moduleName: "views/picture/picture",
-    context: { pictureName: args.view.text },
+//    context: args.view.bindingContext
+    context: {
+       item: args.view.bindingContext,
+       isLoading: pageData.get("isLoading")
+    },
   };
   frameModule.topmost().navigate(navigationEntry);
 };
