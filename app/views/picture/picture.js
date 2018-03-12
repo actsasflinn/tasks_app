@@ -32,13 +32,19 @@ exports.loaded = function(args) {
     //pageData.set("item", loaded);
     page.bindingContext = loaded;
 
-    http.getImage(loaded.picture_src).then(function(response) {
-      item.set("loading", false);
-      item.picture = response;
+    http.getImage(loaded.picture_src).then(function(r) {
+      console.log("bar");
+      loaded.loading = false;
+      loaded.picture = r;
+      loaded.set("picture", r);
+      page.bindingContext = loaded;
 
       //loaded.picture = response;
       //pageData.set("item", loaded);
-      //page.bindingContext = item;
+//      page.bindingContext = loaded;
+      loaded.picture = r;
+      item.picture = r;
+      console.log("foo");
     }, function(err) {
       item.set("loading", false);
     });
